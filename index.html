@@ -120,9 +120,9 @@ const %LAMBDA_NAME%Handler = {
     canHandle(handlerInput) {
         return handlerInput.requestEnvelope.request.type === 'IntentRequest' && handlerInput.requestEnvelope.request.intent.name === '%LAMBDA_NAME%';
     },
-    handle(handlerInput) {
-        return handlerInput.responseBuilder.speak(`%RESPONSE%`)
-         .withShouldEndSession(false) ` +
+    handle(handlerInput) { ` +
+'        return handlerInput.responseBuilder.speak(`%RESPONSE%`) ' +
+'         .withShouldEndSession(false) ' +
 '         .withSimpleCard(`%LAMBDA_NAME%`,`%RESPONSE%`)' +
 '         .getResponse();' +
 '    },' +
