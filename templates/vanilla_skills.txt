@@ -1,0 +1,42 @@
+    {
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "change this to your own",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+
+%SKILLS_REPLACE%
+
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        }
+
+      ],
+      "types": []
+    }
+  }
+}
